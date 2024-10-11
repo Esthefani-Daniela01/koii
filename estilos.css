@@ -1,0 +1,47 @@
+.nav{
+    border: 20px;
+    justify-content:flex-end;
+    
+}
+
+
+.col:hover{
+        transition: transform 0.2s, box-shadow 0.5s;
+     transform: translateY(-10px);
+    
+    
+
+}
+
+
+
+
+.container{
+    
+    justify-content:center;
+    
+}
+
+.card {
+   
+    transition: transform 0.2s, box-shadow 0.5s;
+    
+    
+padding: 10px;
+margin-bottom: 30px;
+    
+display: flex;
+ margin: 20px;
+    
+    float: left;  }
+
+
+.move-image:hover {
+    transform: translateY(-10px);
+    
+    padding: 5px;
+   margin: 10px;
+}
+
+
+

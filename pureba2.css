@@ -1,0 +1,158 @@
+.accordion-content {
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out, max-height 0.4s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    transform: translateX(0);
+}
+
+.giratoria{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card {
+ 
+    background-color: #FADBD8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+    width: 300px;
+    
+    transition: transform 0.2s, box-shadow 0.5s;
+    
+    
+    
+margin-top: 80px;
+border: 10px;
+padding: 20px;
+margin-bottom: 30px;
+    
+display: flex;
+ margin: 50px;
+    
+    float: left;
+    
+
+ 
+    background-color: #f1c40f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+    width: 300px;
+    
+    transition: transform 0.2s, box-shadow 0.5s;
+    margin-right: 20px; /* Espacio a la derecha de cada tarjeta */
+    
+    display: grid; /* Usamos Grid Layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crear columnas de tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+  }
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-back[
+
+]
+.card-container {
+  perspective: 1000px; 
+    
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d; 
+  transform: rotateY(0deg);
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #ff9966, #ff5e62); 
+}
+
+.card-back {
+  background: linear-gradient(135deg, #00c6ff, #0072ff); 
+  transform: rotateY(180deg); 
+}
+
+
+
+
+
+
+
+
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-image: url('tu-imagen-de-fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.banner-content {
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
